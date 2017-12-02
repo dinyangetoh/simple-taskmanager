@@ -22,7 +22,7 @@ class TaskController extends Controller
     		$data['tasks'] = isset($category->tasks)? $category->tasks: null;
     	}
 
-    	return view('taskmanager::index',$data);
+    	return view('Simpletaskmanager::index',$data);
     }
 
     public function addCategory(Request $request)
