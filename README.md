@@ -10,7 +10,7 @@ It supports Laravel 5.0 and later
 To get the latest version of Laravel Taskmanager, simply add the following line to the require block of your `composer.json` file.
 
 ```
-"dinyangetoh/simple-taskmanager": "1.0.*"
+"dinyangetoh/simple-taskmanager": "dev-master"
 ```
 
 You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
@@ -36,3 +36,12 @@ You can publish the configuration file using this command:
 ```bash
 php artisan vendor:publish --provider="Dinyangetoh\SimpleTaskmanager\TaskManagerServiceProvider"
 ```
+
+Developed with love from 
+
+David Inyangetoh
+@dinyangetoh
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
