@@ -25,8 +25,11 @@ class TaskManagerServiceProvider extends ServiceProvider
         $this->publishes([__DIR__.'/assets' => public_path('vendor/simple-taskmanager'),
         ], 'public');
 
+        $this->publishes([__DIR__.'/Views' => public_path('vendor/simple-taskmanager'),
+        ], 'views');
+
         $this->publishes([
-            __DIR__.'/../database/migrations/' => database_path('migrations')
+            __DIR__.'/migrations/' => database_path('migrations')
         ], 'migrations');
     }
 

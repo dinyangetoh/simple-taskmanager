@@ -31,11 +31,25 @@ Also, register the Facade like so:
 
 ## Configuration
 
+You need to run migrations to create necessary tables
+
+```bash
+php artisan migrate"
+```
+
 You can publish the configuration file using this command:
 
 ```bash
-php artisan vendor:publish --provider="Dinyangetoh\SimpleTaskmanager\TaskManagerServiceProvider"
+php artisan vendor:publish --tag=public
 ```
+
+Then you are ready to get runnings. Just visit 
+
+```bash
+http://{{site-url}}/tasks
+```
+
+Add task categories and tasks. Enjoy.
 
 Developed with love from 
 
