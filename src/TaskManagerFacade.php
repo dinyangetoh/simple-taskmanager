@@ -8,6 +8,6 @@ class TaskManagerFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'Simpletaskmanager';
+        return 'taskmanager';
     }
 }

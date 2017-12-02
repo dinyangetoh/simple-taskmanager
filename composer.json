@@ -18,7 +18,7 @@
         "laravel": {
             "providers": ["Dinyangetoh\\SimpleTaskmanager\\TaskManagerServiceProvider"],
             "aliases": {
-                "Simpletaskmanager": "Dinyangetoh\\SimpleTaskmanager\\TaskManagerFacade"
+                "Taskmanager": "Dinyangetoh\\SimpleTaskmanager\\TaskManagerFacade"
             }
         }
     },

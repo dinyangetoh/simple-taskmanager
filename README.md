@@ -29,6 +29,8 @@ Also, register the Facade like so:
 ]
 ```
 
+
+
 ## Configuration
 
 You need to run migrations to create necessary tables

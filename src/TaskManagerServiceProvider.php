@@ -22,10 +22,10 @@ class TaskManagerServiceProvider extends ServiceProvider
         // Load migrations
         $this->loadMigrationsFrom(__DIR__.'/migrations');
 
-        $this->publishes([__DIR__.'/assets' => public_path('vendor/simple-taskmanager'),
+        $this->publishes([__DIR__.'/assets' => public_path('vendor/taskmanager'),
         ], 'public');
 
-        $this->publishes([__DIR__.'/Views' => public_path('vendor/simple-taskmanager'),
+        $this->publishes([__DIR__.'/views' => public_path('vendor/taskmanager'),
         ], 'views');
 
         $this->publishes([
@@ -45,6 +45,6 @@ class TaskManagerServiceProvider extends ServiceProvider
             return new TaskManager();
         });
 
-        $this->app->alias(TaskManager::class, 'Simpletaskmanager');
+        $this->app->alias(TaskManager::class, 'taskmanager');
     }
 }
