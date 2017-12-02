@@ -1,0 +1,38 @@
+{
+    "name": "dinyangetoh/simple-taskmanager",
+    "description": "A Laravel package that adds simple task management functionality to an app",
+    "license": "MIT",
+    "authors": [{
+        "name": "David Inyang-Etoh",
+        "email": "dinyangetoh@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^5.4.0|^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*",
+        "mockery/mockery": ">=0.7.2"
+    },
+    "extra": {
+        "laravel": {
+            "providers": ["Dinyangetoh\\SimpleTaskmanager\\TaskManagerServiceProvider"],
+            "aliases": {
+                "Simpletaskmanager": "Dinyangetoh\\SimpleTaskmanager\\TaskManagerFacade"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Dinyangetoh\\SimpleTaskmanager\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dinyangetoh\\SimpleTaskmanager\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
